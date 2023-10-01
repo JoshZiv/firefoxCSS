@@ -1,0 +1,187 @@
+/* userContent.css - change css on domains*/
+
+/* Unvisited link color */
+a { color: #960000!important; }  
+/* Visited link color */
+a:visited { color: #460000!important; } 
+/*
+body{
+    color: #b6a585 !important;
+}
+*/
+
+@-moz-document url-prefix(about:home), url-prefix(about:newtab) { 
+    body {
+        background: radial-gradient(#360000, #000000, #360000) !important;
+    }
+    html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-breakpoint-override.visible-logo main div.body-wrapper.on div.discovery-stream.ds-layout div.ds-column.ds-column-12 div.ds-column-grid div div.ds-top-sites section.collapsible-section.top-sites div ul.top-sites-list li.top-site-outer div.top-site-inner a.top-site-button div.tile{
+        background-color: transparent !important;
+    }
+    html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-breakpoint-override.visible-logo main div.body-wrapper.on div.discovery-stream.ds-layout div.ds-column.ds-column-12 div.ds-column-grid div div.ds-top-sites section.collapsible-section.top-sites div ul.top-sites-list li.top-site-outer div.top-site-icon{
+        background-color: transparent !important;
+    }
+    html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-search-alignment.ds-outer-wrapper-breakpoint-override.visible-logo main div.body-wrapper.on div.discovery-stream.ds-layout div.ds-column.ds-column-12 div.ds-column-grid div div.ds-top-sites section.collapsible-section.top-sites div ul.top-sites-list li.top-site-outer div.top-site-inner a.top-site-button div.tile div.icon-wrapper div.top-site-icon.rich-icon{
+        background-color: transparent !important;
+    }
+    html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-breakpoint-override.visible-logo main div.non-collapsible-section div.search-wrapper div.search-inner-wrapper button.search-handoff-button{
+        background-color: transparent !important;
+        border: 1px solid #ff000007 !important;
+    }
+}
+
+/* google.com */
+@-moz-document domain(google.com) {
+    body {background:#000000 !important;}
+    html body#gsr.srp div#main.main div#cnt.e9EfHf div#appbar.appbar div div#extabar div div#slim_appbar.WE0UJf.NyYcvd{
+        background-color: #000000;
+    }
+    html body#gsr.srp div#main.main div#cnt.e9EfHf div#rcnt.GyAeWb div#center_col.s6JM6d div#res.eqAnXb div#search div div#rso.v7W49e div.MjjYud div.g.Ww4FFb.vt6azd.tF2Cxc.asEBEc{
+        background-color: #000000 !important;
+    }
+    html body#gsr.srp div#main.main div#cnt.e9EfHf div#top_nav.gke0pe div#hdtb.GLcBOb div#pTwnEc.yg51vc{
+        background-color: #000000 !important;
+    }
+    html body#gsr.srp div#searchform.CvDJxb div.sfbg{
+        background-color: #000000 !important;
+    }
+    html body#gsr.srp div#main.main div#cnt.e9EfHf div#before-appbar{
+        border-style: ridge;
+        border-width: 1px;
+        border-color: red;
+    }
+    .YTDezd{
+        background-color: #a10000 !important;
+    }
+}
+
+/* youtube.com */
+
+@-moz-document domain(youtube.com) {
+    :root{
+        /* icon highlight colours */
+        --yt-spec-text-primary: #700000 !important;
+        --yt-spec-icon-inactive: #700000 !important;
+    }
+    
+    /* text colours */
+    /* default youtube text colour */
+    yt-formatted-string{
+        color:#d8d8d8 !important;
+    }
+    /* tagged text variants */
+    #text{
+        color:#acacac !important;
+    }
+    #metadata-line{
+        color: #5c5c5c !important;
+    }
+    #video-title{
+        color:#bbbbbb !important;
+    }
+
+    /* search bar */
+    html body ytd-app div#content.style-scope.ytd-app div#masthead-container.style-scope.ytd-app ytd-masthead#masthead.masthead-finish div#container.style-scope.ytd-masthead div#center.style-scope.ytd-masthead{
+        --ytd-searchbox-legacy-border-color: #e900001e !important;
+        --ytd-searchbox-legacy-button-border-color: #e900001e !important;
+        --ytd-searchbox-background: transparent !important;
+
+        ytd-searchbox[has-focus] #container.ytd-searchbox{
+            border-color: #ff000028 !important;
+        }
+    }
+
+    /* icons */
+    yt-icon-shape{
+        color: #740000;
+    }
+
+    /* hide shorts, trending and banners */
+    #content.ytd-rich-section-renderer {display: none !important;}
+
+    /* hide voice search icon */
+    button.ytp-button[data-tooltip-target-id=ytp-autonav-toggle-button] , #voice-search-button {
+        display: none !important;
+    }
+
+    #masthead > div:nth-child(5) {background: linear-gradient(#360000, #000000) !important;}
+    
+    /* main content view, keep sub elements after */
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{
+        background: #000000;
+    }
+
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#scroll-container.style-scope.ytd-feed-filter-chip-bar-renderer iron-selector#chips.style-scope.ytd-feed-filter-chip-bar-renderer {
+        background: radial-gradient(#360000, #000000);        
+    }
+
+    /* filters - right arrow */
+    ytd-feed-filter-chip-bar-renderer[is-dark-theme] #right-arrow.ytd-feed-filter-chip-bar-renderer::before {
+        background: linear-gradient(to left,#000000 20%,rgba(233, 6, 6, 0) 80%) !important;
+    }
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#right-arrow.style-scope.ytd-feed-filter-chip-bar-renderer div#right-arrow-button.style-scope.ytd-feed-filter-chip-bar-renderer{
+        background: #000000 !important; 
+    }
+
+    /* filters - left arrow */
+    ytd-feed-filter-chip-bar-renderer[is-dark-theme] #left-arrow.ytd-feed-filter-chip-bar-renderer::after {
+        background: linear-gradient(to right,#000000 20%,rgba(233, 6, 6, 0) 80%) !important;
+    }
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#left-arrow.style-scope.ytd-feed-filter-chip-bar-renderer div#left-arrow-button.style-scope.ytd-feed-filter-chip-bar-renderer{
+        background: #000000 !important; 
+    }
+
+    /* filters - text background */
+    yt-chip-cloud-chip-renderer.style-scope:nth-child(1) > yt-formatted-string:nth-child(1){
+        background-color: transparent !important;
+    }
+
+    /* left side bar */
+    html body ytd-app div#content.style-scope.ytd-app tp-yt-app-drawer#guide.style-scope.ytd-app div#contentContainer.style-scope.tp-yt-app-drawer div#guide-wrapper.style-scope.ytd-app div#guide-content.style-scope.ytd-app{
+        background: #000000 !important;
+    }
+
+    /* account settings drop down */
+    html body ytd-app ytd-popup-container.style-scope.ytd-app tp-yt-iron-dropdown.style-scope.ytd-popup-container div#contentWrapper.style-scope.tp-yt-iron-dropdown{
+        border-bottom: #39f500;
+    }
+    html body ytd-app ytd-popup-container.style-scope.ytd-app tp-yt-iron-dropdown.style-scope.ytd-popup-container div#contentWrapper.style-scope.tp-yt-iron-dropdown ytd-multi-page-menu-renderer.style-scope.ytd-popup-container{
+        border-color: #360000;
+        border-style: solid;
+        background-color: #000000 !important;
+    }
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-watch-flexy.style-scope.ytd-page-manager.hide-skeleton{
+        background-color: #000000;
+    }
+}
+    
+    /* html.duckduckgo.com */
+    
+@-moz-document domain(html.duckduckgo.com) {
+    body {background:#1c1c1c !important;}
+    /* dropdown menu background */
+    .frm__select {background: #eeeeee !important;}
+    a.result__a {color: #cccccc !important;}
+    .result__extras__url a {color: #eeeeee !important;}
+    a.result__snippet {color:#cccccc !important;}
+    .result__snippet b {color:#cccccc !important;}
+    .result__body:hover {background:#282828 !important;}
+    .result:hover, .related-searches:hover {border: 1px solid #282828 !important; background:#282828 !important;}
+    /* zero click */
+    .zci-wrapper {background-color: #282828 !important;}
+    h1.zci__heading a {color: #eeeeee !important;}
+    #zero_click_abstract {color: #cccccc !important;}
+    #zero_click_abstract a {color: #cccccc !important;}
+    /* did you mean */
+    #did_you_mean {color: #eeeeee !important;}
+    #did_you_mean a {color: #eeeeee !important;}
+}
+
+
+/* lite.duckduckgo.com */
+
+@-moz-document domain(lite.duckduckgo.com) {
+    body {background:#1c1c1c !important;}
+    a {color: #eeeeee !important;}
+    span.link-text {color: #cccccc !important;}
+    td {color: #cccccc !important;}
+}
