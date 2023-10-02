@@ -52,6 +52,12 @@ body{
     .YTDezd{
         background-color: #a10000 !important;
     }
+
+    .MjjYud{
+        .dnXCYb{
+            cursor: pointer;
+        }
+    }
 }
 
 /* youtube.com */
@@ -112,6 +118,7 @@ body{
 
     html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#scroll-container.style-scope.ytd-feed-filter-chip-bar-renderer iron-selector#chips.style-scope.ytd-feed-filter-chip-bar-renderer {
         background: radial-gradient(#360000, #000000);        
+        background-clip: content-box, padding-box !important;
     }
 
     /* filters - right arrow */
@@ -128,6 +135,10 @@ body{
     }
     html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#left-arrow.style-scope.ytd-feed-filter-chip-bar-renderer div#left-arrow-button.style-scope.ytd-feed-filter-chip-bar-renderer{
         background: #000000 !important; 
+    }
+
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer{
+        background-color: #000000 !important;
     }
 
     /* filters - text background */
