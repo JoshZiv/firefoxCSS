@@ -1,16 +1,16 @@
 /* userContent.css - change css on domains*/
 
 /* Unvisited link color */
-a { color: #960000!important; }  
+a { color: #960000!important; }
 /* Visited link color */
-a:visited { color: #460000!important; } 
+a:visited { color: #6e0000!important; }
 /*
 body{
     color: #b6a585 !important;
 }
 */
 
-@-moz-document url-prefix(about:home), url-prefix(about:newtab) { 
+@-moz-document url-prefix(about:home), url-prefix(about:newtab) {
     body {
         background: radial-gradient(#360000, #000000, #360000) !important;
     }
@@ -27,13 +27,18 @@ body{
         background-color: transparent !important;
         border: 1px solid #ff000007 !important;
     }
+    html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-search-alignment.ds-outer-wrapper-breakpoint-override.visible-logo main div.non-collapsible-section div.search-wrapper div.search-inner-wrapper input#newtab-search-text{
+        background-color: transparent !important;
+        border: 1px solid #ff000015 !important;
+    }
 }
 
 /* google.com */
 @-moz-document domain(google.com) {
     body {background:#000000 !important;}
-    html body#gsr.srp div#main.main div#cnt.e9EfHf div#appbar.appbar div div#extabar div div#slim_appbar.WE0UJf.NyYcvd{
-        background-color: #000000;
+    html body#gsr.srp div#main.main div#cnt.e9EfHf div#appbar.appbar {
+        background-color: #000000 !important;
+        border-top: 1px solid #ff0000 !important;
     }
     html body#gsr.srp div#main.main div#cnt.e9EfHf div#rcnt.GyAeWb div#center_col.s6JM6d div#res.eqAnXb div#search div div#rso.v7W49e div.MjjYud div.g.Ww4FFb.vt6azd.tF2Cxc.asEBEc{
         background-color: #000000 !important;
@@ -44,13 +49,76 @@ body{
     html body#gsr.srp div#searchform.CvDJxb div.sfbg{
         background-color: #000000 !important;
     }
-    html body#gsr.srp div#main.main div#cnt.e9EfHf div#before-appbar{
-        border-style: ridge;
-        border-width: 1px;
-        border-color: red;
-    }
     .YTDezd{
         background-color: #a10000 !important;
+    }
+
+    /* Google calendar */
+
+    :root{
+        --surface: #000000 !important;
+        --hairline: #360000 !important;
+        --textfield-surface: transparent !important;
+        --fab: transparent !important;
+        --shadow-1: 0px 1px 2px 0px rgba(209,0,0,0.3),0px 1px 3px 1px rgba(209, 0, 0, 0.15) !important;
+    }
+
+    #gb{
+        background: linear-gradient(#360000, #000000) !important;
+    }
+
+    .gb_Ba{
+        background: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .VfPpkd-LgbsSe-OWXEXe-Bz112c-UbuQg{
+        border-color:#700000 !important;
+    }
+
+    .RDlrG{
+        border: 2px #700000 solid !important;
+        border-radius: 12px !important;
+    }
+
+    /* location text box */
+    .aXFFQc{
+        background-color: #6e0000 !important;
+    }
+
+    /* location span */
+    .E4zakf {
+        background: linear-gradient(to top, #6e0000 80%, #ff5a5a, #6e0000 80%) !important;
+    }
+
+    .UG2wL {
+        color: #d8d8d8 !important;
+    }
+
+    /* search for people */
+    .WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me){
+        background-color: #310000 !important;
+        border: 2px solid #6e0000 !important;
+        border-radius: 20px !important;
+    }
+
+    .xnwcRe .KPyFeb{
+        background-color: transparent !important;
+    }
+
+    .xnwcRe{
+        border: solid 1px #500000 !important;
+        border-radius: 5px !important;
+    }
+
+    .Rj2Mlf:not(:disabled){
+        border-color: #500000 !important;
+    }
+
+    /* calendar events */
+    .EfQccc{
+        background: #000000 !important;
+        border: solid 1px;
     }
 }
 
@@ -62,7 +130,7 @@ body{
         --yt-spec-text-primary: #700000 !important;
         --yt-spec-icon-inactive: #700000 !important;
     }
-    
+
     /* text colours */
     /* default youtube text colour */
     yt-formatted-string{
@@ -104,14 +172,14 @@ body{
     }
 
     #masthead > div:nth-child(5) {background: linear-gradient(#360000, #000000) !important;}
-    
+
     /* main content view, keep sub elements after */
     html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer{
         background: #000000;
     }
 
     html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#scroll-container.style-scope.ytd-feed-filter-chip-bar-renderer iron-selector#chips.style-scope.ytd-feed-filter-chip-bar-renderer {
-        background: radial-gradient(#360000, #000000);        
+        background: radial-gradient(#360000, #000000);
     }
 
     /* filters - right arrow */
@@ -119,7 +187,7 @@ body{
         background: linear-gradient(to left,#000000 20%,rgba(233, 6, 6, 0) 80%) !important;
     }
     html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#right-arrow.style-scope.ytd-feed-filter-chip-bar-renderer div#right-arrow-button.style-scope.ytd-feed-filter-chip-bar-renderer{
-        background: #000000 !important; 
+        background: #000000 !important;
     }
 
     /* filters - left arrow */
@@ -127,7 +195,7 @@ body{
         background: linear-gradient(to right,#000000 20%,rgba(233, 6, 6, 0) 80%) !important;
     }
     html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer div#chips-wrapper.style-scope.ytd-feed-filter-chip-bar-renderer div#left-arrow.style-scope.ytd-feed-filter-chip-bar-renderer div#left-arrow-button.style-scope.ytd-feed-filter-chip-bar-renderer{
-        background: #000000 !important; 
+        background: #000000 !important;
     }
 
     /* filters - text background */
@@ -153,9 +221,9 @@ body{
         background-color: #000000;
     }
 }
-    
+
     /* html.duckduckgo.com */
-    
+
 @-moz-document domain(html.duckduckgo.com) {
     body {background:#1c1c1c !important;}
     /* dropdown menu background */
@@ -185,3 +253,147 @@ body{
     span.link-text {color: #cccccc !important;}
     td {color: #cccccc !important;}
 }
+
+@-moz-document regexp("https://git.*") {
+    .content-wrapper{
+        background-color: #000000 !important;
+    }
+    #super-sidebar{
+        background-color: #000000 !important;
+    }
+    .merge-request-tabs-container{
+        background-color: #000000 !important;
+    }
+    .top-bar-container{
+        background-color: #000000 !important;
+    }
+    a { color: #ff2c2c!important; }
+    /* Visited link color */
+    a:visited { color: #920000!important; }
+}
+
+@-moz-document regexp("https://pad\..*") {
+    body {
+        background: linear-gradient(to left top, #960000, #000000, #960000, #000000) !important;
+        background-attachment: fixed !important;
+    }
+    .collapse {
+        background-color: #000000 !important;
+    }
+    .navbar-default {
+        border-color:#a10000 !important;
+    }
+    .text {
+        color: #960000 !important;
+    }
+    .item {
+        background-color: #00000067 !important;
+        backdrop-filter: blur(10px);
+        border: 2px solid #960000;
+        border-radius: 15px !important;
+    }
+    .ui-view-area{
+        color: #cfcfcf !important;
+    }
+    #doc {
+        color: #cfcfcf !important;
+        border: solid 1px rgba(255, 0, 0, 0.438);
+        border-radius: 21px;
+        background-color: rgba(0, 0, 0, 0.541);
+        backdrop-filter: blur(10px);
+    }
+    code {
+        background-color: #000000b0 !important;
+    }
+    #ui-toc-affix{
+        left: 1350px !important;
+        border: solid 1px #6e0000;
+        border-radius: 10px;
+        background-color: #0006;
+        backdrop-filter: blur(10px);
+        width: fit-content !important;
+    }
+
+    .markdown-body .highlight pre, .markdown-body pre{
+        background-color: #5c5c5c8c !important;
+        width: fit-content !important;
+    }
+    .markdown-body .highlight pre, .markdown-body pre > *{
+        background-color: transparent !important;
+    }
+    .markdown-body code{
+        color: #0086b3 !important;
+    }
+}
+
+@-moz-document domain("docs.rs") {
+    :root{
+        --main-background-color: #000000 !important;
+        --color-background: #1a1a1a !important;
+        --sidebar-background-color: #1a1a1a !important;
+        --sidebar-background-color-hover: #0a0a0a !important;
+    }
+
+    .sidebar{
+        border-right: 1px #6e0000 solid;
+
+    }
+}
+
+/*@-moz-document regexp("https://jira\..*") {
+    :root{
+        --aui-page-background: transparent !important;
+    }
+    body {
+        background: linear-gradient(to left top, #3f3f3f, #000000, #3f3f3f, #000000) !important;
+        background-attachment: fixed !important;
+        color: #FFF !important;
+    }
+    header.aui-page-header{
+        background-color: transparent !important;
+        border: solid black 2px !important;
+        border-radius: 15px !important;
+        padding: 10px !important
+    }
+    .aui-sidebar-body{
+        background-color: transparent !important;
+    }
+    .aui-sidebar-wrapper{
+        background-color: transparent !important;
+    }
+    .list-panel{
+        background-color: transparent !important;
+    }
+    .issue-list{
+        background-color: transparent !important;
+    }
+    .inline-issue-create-container{
+        background-color: transparent !important;
+    }
+    .list-results-panel{
+        border: solid black 2px !important;
+        border-radius: 10px !important;
+    }
+    .issue-link-summary{
+        color: #acacac !important;
+    }
+    .issue-header{
+        background-color: transparent !important;
+    }
+    .ui-sidebar{
+        background-color: transparent !important;
+    }
+    .issue-container{
+        border: solid black 1px !important;
+        border-radius: 10px !important;
+    }
+    #issue-content{
+        background-color: transparent !important;
+        color:#acacac !important;
+        border: solid black 2px !important;
+        border-radius: 10px !important;
+    }
+    html.mozilla body#jira.aui-layout.aui-theme-default.aui-page-sidebar.page-type-split.page-issue-navigator.page-type-navigator  div.aui-page-panel div.aui-page-panel-inner main#main.aui-page-panel-content.issue-search-with-sidebar div.issue-navigator div.content div.issue-search div.details-layout div div.aui-group.split-view div.aui-item.list-results-panel div div.simple-issue-list div.list-panel div.search-results div.list-content ol.issue-list li.focused{
+        background-color: black !important;
+    }
+}*/
